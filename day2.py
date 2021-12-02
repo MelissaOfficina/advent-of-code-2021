@@ -14,6 +14,7 @@ def check_directions(li):
     print(f'Part One: horizontal = {x}, depth = {y}')
     return x * y
 
+
 def check_directions_aim(li):
     x = 0
     y = 0
@@ -31,6 +32,7 @@ def check_directions_aim(li):
             aim += points
     print(f'Part Two: horizontal = {x}, depth = {y}')
     return x * y
+
 
 with open('day2_data.txt', 'r') as my_file:
     my_list = my_file.readlines()
