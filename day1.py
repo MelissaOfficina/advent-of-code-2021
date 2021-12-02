@@ -15,11 +15,11 @@ def check_previous_extended(some_list):
     counter = 0
     previous = False
     for key, el in enumerate(some_list):
-        if el != some_list[-2] and el != some_list[-1]:
+        if key != (len(some_list) - 1) and key != (len(some_list) - 2):
             sum_ = el + some_list[key + 1] + some_list[key + 2]
-        elif el == some_list[-2]:
+        elif key == (len(some_list) - 2):
             sum_ = el + some_list[key + 1]
-        elif el == some_list[-1]:
+        elif key == (len(some_list) - 1):
             sum_ = el
         if previous is not False and sum_ > previous:
             counter += 1
